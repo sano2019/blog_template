@@ -1,0 +1,16 @@
+title: My Modern Blog
+description: A minimalist blog template.
+baseurl: "" # Leave empty for custom domains
+url: "https://yourdomain.com" # Replace with your domain later
+
+# Build settings
+remote_theme: jekyll/minima
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections for Decap CMS
+collections:
+  posts:
+    output: true
+    permalink: /blog/:title/

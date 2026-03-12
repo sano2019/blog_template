@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<article class="post-container">
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <time class="post-date">{{ page.date | date: "%B %d, %Y" }}</time>
+    
+    {% if page.image %}
+      <div class="featured-image-wrapper">
+        <img src="{{ page.image }}" alt="{{ page.title }}" class="featured-image">
+      </div>
+    {% endif %}
+  </header>
+
+  <section class="post-content">
+    {{ content }}
+  </section>
+
+  <footer class="post-footer">
+    <a href="{{ site.baseurl }}/" class="back-link">← Back to all posts</a>
+  </footer>
+</article>
+
+<style>
+  .post-container {
+    max-width: 720px;
+    margin: 4rem auto;
+    padding: 0 1.5rem;
+  }
+  .post-header { text-align: center; margin-bottom: 3rem; }
+  .post-title { font-size: 2.5rem; color: var(--text-main); margin-bottom: 0.5rem; }
+  .post-date { color: var(--text-muted); font-style: italic; }
+  
+  .featured-image-wrapper { margin-top: 2rem; border-radius: var(--radius); overflow: hidden; }
+  .featured-image { width: 100%; height: auto; display: block; }
+
+  .post-content { font-size: 1.15rem; line-height: 1.8; color: #334155; }
+  .post-content h2 { margin-top: 2.5rem; color: var(--primary); }
+  
+  .post-footer { margin-top: 5rem; border-top: 1px solid #e2e8f0; padding-top: 2rem; }
+  .back-link { color: var(--primary); text-decoration: none; font-weight: 600; }
+</style>

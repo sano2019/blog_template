@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/style.css">
+    
+    {% seo %} </head>
+<body>
+
+    <nav class="main-nav">
+        <div class="container nav-flex">
+            <a href="{{ site.baseurl }}/" class="logo">{{ site.title }}</a>
+            <div class="nav-links">
+                <a href="{{ site.baseurl }}/">Home</a>
+                <a href="{{ site.baseurl }}/admin/" class="admin-link">Admin Login</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        {{ content }}
+    </main>
+
+    <footer class="site-footer">
+        <div class="container">
+            <p>&copy; {{ "now" | date: "%Y" }} {{ site.title }}. Built with Jekyll.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
