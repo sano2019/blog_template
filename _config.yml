@@ -1,7 +1,7 @@
 title: My Modern Blog
 description: A minimalist blog template.
-baseurl: "" # Leave empty for custom domains
-url: "https://yourdomain.com" # Replace with your domain later
+baseurl: "/blog_template" # Leave empty for custom domains
+url: "https://sano2019.github.io" # Replace with your domain later
 
 # Build settings
 remote_theme: jekyll/minima
