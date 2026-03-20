@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: your-username/your-repo-name # Update this!
+  repo: sano2019/blog_template # Update this!
   branch: main
 
 media_folder: "assets/images"

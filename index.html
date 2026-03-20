@@ -15,7 +15,7 @@ layout: default
         <img src="{{ post.image }}" class="card-image" alt="{{ post.title }}">
       {% endif %}
       <div class="card-content">
-        <h2 class="card-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
+        <h2 class="card-title"><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2>
         <p style="color: var(--text-muted);">{{ post.description | truncate: 100 }}</p>
         <small>{{ post.date | date: "%B %d, %Y" }}</small>
       </div>
