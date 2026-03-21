@@ -2,6 +2,8 @@ backend:
   name: git-gateway
   repo: sano2019/blog_template # Update this!
   branch: main
+  identity_url: https://classy-jelly-03b905.netlify.app/.netlify/identity
+  gateway_url: https://classy-jelly-03b905.netlify.app/.netlify/git
 
 media_folder: "assets/images"
 public_folder: "/assets/images"
