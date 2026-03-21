@@ -1,5 +1,5 @@
 backend:
-  name: github
+  name: git-gateway
   repo: sano2019/blog_template # Update this!
   branch: main
 
