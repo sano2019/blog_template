@@ -1,3 +1,0 @@
-/api/*  /.netlify/functions/:splat  200
-/auth/* /.netlify/functions/auth  200
-/callback /.netlify/functions/auth  200

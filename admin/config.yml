@@ -1,8 +1,6 @@
 backend:
-  name: github
-  repo: sano2019/blog_template
+  name: git-gateway
   branch: main
-  base_url: https://classy-jelly-03b905.netlify.app
 
 site_url: https://sano2019.github.io/blog_template
 display_url: https://sano2019.github.io/blog_template
